@@ -38,7 +38,7 @@ class RegisterController extends SprykerRegisterController
         if ($this->getFactory()->getPyzSessionClient()->get(static::PYZ_INVITATION_SESSION_ID)) {
             return $this->view($response, [], '@CustomerPage/views/register/register.twig');
         }
-
-        return $this->view($response, [], '@CustomerPage/views/login/login.twig');
+        return $this->view($response, [], '@CustomerPage/views/register/register.twig');
+        //return $this->view($response, [], '@CustomerPage/views/login/login.twig');
     }
 }
